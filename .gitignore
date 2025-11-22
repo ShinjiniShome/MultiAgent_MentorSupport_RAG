@@ -8,8 +8,10 @@
 __pycache__/
 *.pyc
 
-# Chroma DB folder (later)
-chroma/
-
 # VS Code settings
 .vscode/
+
+# Real papers and derived chunks
+KnowledgeBase/
+JsonChunksPapers/
+ChromaEmbeddings/

@@ -58,7 +58,7 @@ class SupervisorAgent:
         self.client = OpenAI(api_key=api_key)
 
     @staticmethod
-    def _build_system_prompt() -> str:
+    def _build_system_prompt() -> str: # Task Prompts for LLM for Main Agent
         """
         System instructions for the LLM.
         We define:
@@ -163,12 +163,12 @@ Rules:
         response = self.client.chat.completions.create(
             model=self.model_name,
             response_format={"type": "json_object"},
-            messages=messages,
+            messages=messages
         )
 
         raw_content = response.choices[0].message.content
 
-        # Safety: parse JSON and normalize
+        # Parse JSON and normalize
         try:
             data = json.loads(raw_content)
         except json.JSONDecodeError:
@@ -230,7 +230,7 @@ Rules:
             agent_class = AGENT_MAP.get(name)
             if agent_class is None:
                 if debug:
-                    print(f"[WARN] No implementation found for agent: {name}")
+                    print(f"[WARNING] No implementation found for agent: {name}")
                 continue
 
             try:
@@ -305,7 +305,7 @@ Rules:
 
         response = self.client.chat.completions.create(
             model=self.model_name,
-            messages=messages,
+            messages=messages
         )
 
         return response.choices[0].message.content
@@ -313,11 +313,11 @@ Rules:
     def run_full_flow(self, manager_query: str, debug: bool = True):
         """
         High-level flow:
-        1) Route to sub-agents (existing JSON routing).
-        2) Execute selected agents.
-        3) Optionally execute fallback agents if user agrees.
-        4) Consolidate all responses into one final answer.
-        5) Return everything in a dict for easier debugging.
+        - Route to sub-agents (existing JSON routing).
+        - Execute selected agents.
+        - Optionally execute fallback agents if user agrees.
+        - Consolidate all responses into one final answer.
+        - Return everything in a dict for easier debugging.
         """
         routing = self.route(manager_query)
 
@@ -330,14 +330,14 @@ Rules:
 
         # Execute primary agents
         if debug:
-            print("\n[Executing primary agents]")
+            print("\n[Executing primary agents]...")
         primary_outputs = self.execute_agents(manager_query, agents_to_run, debug=debug)
 
         # Optionally execute fallback agents (only if list not empty)
         fallback_outputs = []
         if fallback_agents:
             if debug:
-                print("\n[Fallback agents available]")
+                print("\n[Fallback agents available]:")
                 print(f"Fallback agents: {fallback_agents}")
 
             choice = input(
@@ -346,13 +346,13 @@ Rules:
 
             if choice in {"yes", "y"}:
                 if debug:
-                    print("\n[Executing fallback agents]")
+                    print("\n[Executing fallback agents]...")
                 fallback_outputs = self.execute_agents(
                     manager_query, fallback_agents, debug=debug
                 )
             else:
                 if debug:
-                    print("\n[Skipping fallback agents by user choice]")
+                    print("\n[Skipping fallback agents by user choice]...")
 
         all_outputs = primary_outputs + fallback_outputs
 
@@ -378,7 +378,7 @@ Rules:
 if __name__ == "__main__":
     agent = SupervisorAgent()
 
-    print("SupervisorAgent full-flow test. Type a manager problem (or 'q' to quit).")
+    print("Hi I am your Supervisor Agent: Please type your problem (or 'q' to quit).")
     while True:
         user_input = input("\nManager problem: ")
         if user_input.strip().lower() in {"q", "quit", "exit"}:
