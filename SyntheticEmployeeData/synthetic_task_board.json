@@ -1,0 +1,483 @@
+[
+  {
+    "day": 1,
+    "tasks": [
+      {
+        "assignee": "Alice",
+        "title": "Docs: Brand rich info-mediaries",
+        "status": "To Do",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Alice",
+        "title": "QA: Aggregate real-time methodologies",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Alice",
+        "title": "Backend: Architect b2c interfaces",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "QA: Brand intuitive markets",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "UX: Drive ubiquitous mindshare",
+        "status": "Blocked",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Docs: Brand visionary paradigms",
+        "status": "To Do",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "Backend: Matrix strategic channels",
+        "status": "To Do",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Architect turn-key bandwidth",
+        "status": "To Do",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Monetize next-generation interfaces",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Transform innovative markets",
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "John",
+        "title": "Frontend: Engage world-class e-tailers",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Architect back-end users",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Enhance customized applications",
+        "status": "To Do",
+        "priority": "High"
+      },
+      {
+        "assignee": "Martin",
+        "title": "UX: Matrix user-centric paradigms",
+        "status": "Done",
+        "priority": "High"
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "tasks": [
+      {
+        "assignee": "Alice",
+        "title": "Backend: Disintermediate rich web services",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Alice",
+        "title": "Frontend: Cultivate collaborative e-tailers",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Alice",
+        "title": "Frontend: Morph turn-key eyeballs",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Alice",
+        "title": "Docs: Visualize one-to-one e-services",
+        "status": "To Do",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Frontend: Target enterprise communities",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Backend: Syndicate 24/7 info-mediaries",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "QA: Leverage cross-platform solutions",
+        "status": "Done",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Frontend: Aggregate b2c supply-chains",
+        "status": "Done",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Engage web-enabled roi",
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Incubate web-enabled roi",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Frontend: Leverage one-to-one solutions",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Frontend: Disintermediate front-end communities",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Envisioneer e-business systems",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Generate cross-platform platforms",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Docs: Extend seamless infrastructures",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Architect integrated schemas",
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Expedite one-to-one content",
+        "status": "To Do",
+        "priority": "High"
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "tasks": [
+      {
+        "assignee": "Alice",
+        "title": "Frontend: Maximize value-added methodologies",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Alice",
+        "title": "QA: Mesh synergistic e-commerce",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "UX: Deploy sticky methodologies",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Docs: Expedite front-end portals",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Bob",
+        "title": "UX: Target sticky niches",
+        "status": "Done",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Bob",
+        "title": "QA: Expedite back-end roi",
+        "status": "Done",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "Docs: Embrace ubiquitous content",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Scale front-end markets",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "Backend: Monetize cross-media markets",
+        "status": "Blocked",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "Docs: Enhance scalable bandwidth",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Cultivate b2c relationships",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Target robust architectures",
+        "status": "Done",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Extend visionary deliverables",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Backend: Engineer synergistic infrastructures",
+        "status": "In Progress",
+        "priority": "High"
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "tasks": [
+      {
+        "assignee": "Alice",
+        "title": "Frontend: Repurpose user-centric info-mediaries",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Alice",
+        "title": "QA: Synthesize global info-mediaries",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Alice",
+        "title": "Frontend: Envisioneer extensible networks",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Docs: Morph strategic users",
+        "status": "Blocked",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "QA: Facilitate front-end infrastructures",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "QA: Productize back-end synergies",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Docs: Generate revolutionary content",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Transition 24/365 applications",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "Backend: Productize one-to-one initiatives",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "Backend: Maximize vertical experiences",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "QA: Repurpose plug-and-play portals",
+        "status": "To Do",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "John",
+        "title": "Frontend: Harness granular action-items",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "John",
+        "title": "Backend: Transform next-generation info-mediaries",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Incubate cross-media action-items",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Docs: Enable sticky communities",
+        "status": "Blocked",
+        "priority": "Medium"
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "tasks": [
+      {
+        "assignee": "Alice",
+        "title": "UX: Optimize cutting-edge paradigms",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Alice",
+        "title": "UX: Transition efficient info-mediaries",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Alice",
+        "title": "QA: Productize wireless e-services",
+        "status": "Blocked",
+        "priority": "High"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Docs: Disintermediate ubiquitous metrics",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Frontend: Unleash world-class users",
+        "status": "Done",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Bob",
+        "title": "Frontend: Seize web-enabled synergies",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Visualize viral deliverables",
+        "status": "In Progress",
+        "priority": "High"
+      },
+      {
+        "assignee": "Sarah",
+        "title": "UX: Engineer open-source systems",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "John",
+        "title": "UX: Reinvent strategic content",
+        "status": "Blocked",
+        "priority": "Low"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Enhance revolutionary content",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "John",
+        "title": "QA: Harness compelling models",
+        "status": "Blocked",
+        "priority": "Medium"
+      },
+      {
+        "assignee": "John",
+        "title": "Docs: Scale virtual content",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Docs: Drive back-end systems",
+        "status": "To Do",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Backend: Innovate rich networks",
+        "status": "Done",
+        "priority": "High"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Frontend: Repurpose real-time bandwidth",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "assignee": "Martin",
+        "title": "Docs: Expedite open-source interfaces",
+        "status": "To Do",
+        "priority": "High"
+      }
+    ]
+  }
+]
