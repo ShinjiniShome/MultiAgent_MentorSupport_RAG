@@ -22,7 +22,7 @@ print("Sending test request...")
 response = client.chat.completions.create(
     model=model,
     messages=[
-        {"role": "user", "content": "Hello! Can you confirm the API is working?"}
+        {"role": "user", "content": "Hello! Can you confirm the API is working? Just say YES OR NO"}
     ]
 )
 
