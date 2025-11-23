@@ -11,6 +11,7 @@ import chromadb
 PROJECT_ROOT = Path(__file__).resolve().parent
 CHROMA_DIR = PROJECT_ROOT / "ChromaEmbeddings"
 CONFLICT_COLLECTION_NAME = "conflict_kb"
+#MAX_ACCEPTABLE_DISTANCE = 1 # This is to add a threshold to similarity of query and retrieved documents. Lower distance = Better match
 
 
 class SubAgent1_ConflictResolution:
@@ -65,7 +66,7 @@ class SubAgent1_ConflictResolution:
         """
         response = self.client.embeddings.create(
             model=self.embed_model,
-            input=[text],
+            input=[text]
         )
         return response.data[0].embedding
 
@@ -91,6 +92,7 @@ class SubAgent1_ConflictResolution:
         result = self.collection.query(
             query_embeddings=[query_embedding],
             n_results=self.n_results,
+            include=["documents", "metadatas", "distances"]
         )
 
         # result structure:
@@ -98,18 +100,24 @@ class SubAgent1_ConflictResolution:
         #   "ids": [[...]],
         #   "documents": [[...]],
         #   "metadatas": [[...]],
-        #   "embeddings": [[...]] (optional)
+        #   "distances": [[...]],
+        #   "embeddings": [[...]] (optional and not included here- only seen by LLM)
         # }
 
         ids_list = result.get("ids", [[]])[0] if result.get("ids") else []
         docs_list = result.get("documents", [[]])[0] if result.get("documents") else []
         metas_list = result.get("metadatas", [[]])[0] if result.get("metadatas") else []
+        dists_list = result.get("distances", [[]])[0] if result.get("distances") else []
 
         context_items: List[Dict[str, Any]] = []
 
-        for idx, (doc_id, doc_text, meta) in enumerate(zip(ids_list, docs_list, metas_list)):
+        for idx, (doc_id, doc_text, meta, dist) in enumerate(zip(ids_list, docs_list, metas_list, dists_list)):
             if not doc_text or not doc_text.strip():
                 continue
+
+            # If distance is too high and weak match, skip this chunk
+           # if dist is not None and dist > MAX_ACCEPTABLE_DISTANCE:
+           #     continue
 
             context_items.append(
                 {
@@ -119,15 +127,18 @@ class SubAgent1_ConflictResolution:
                     "paper_authors": meta.get("paper_authors"),
                     "year": meta.get("year"),
                     "chunk_index": meta.get("chunk_index"),
+                    "distance": dist,
                 }
             )
+
 
         if debug:
             print(f"\n[Conflict Sub-Agent] Retrieved {len(context_items)} context chunks (requested {self.n_results}).")
             for i, item in enumerate(context_items):
                 title = item.get("paper_title") or "Unknown title"
                 year = item.get("year")
-                print(f"  {i+1}. {title} ({year})  - id={item['id']}")
+                dist = item.get("distance")
+                print(f"  {i+1}. {title} ({year})  - id={item['id']}  (distance={dist:.3f})")
 
         return context_items
 
