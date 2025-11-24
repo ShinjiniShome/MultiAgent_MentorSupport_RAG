@@ -2,7 +2,7 @@ import os
 import json
 from pathlib import Path
 from typing import List, Dict, Any
-from conflict_paper_metadata import PAPER_METADATA
+from communication_paper_metadata import PAPER_METADATA
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -10,9 +10,9 @@ from langdetect import detect
 
 # FILE PATHS
 PROJECT_ROOT = Path(__file__).resolve().parent
-PDF_FOLDER = PROJECT_ROOT / "KnowledgeBase" / "Conflict_Papers"
+PDF_FOLDER = PROJECT_ROOT / "KnowledgeBase" / "Communication_Papers"
 OUTPUT_FOLDER = PROJECT_ROOT / "JsonChunksPapers"
-OUTPUT_FILE = OUTPUT_FOLDER / "conflict_kb.json"
+OUTPUT_FILE = OUTPUT_FOLDER / "communication_kb.json"
 
 
 # CONFIG TEXT SPLITTER
@@ -24,11 +24,11 @@ TEXT_SPLITTER = RecursiveCharacterTextSplitter(
 )
 
 
-def ingest_conflict_papers() -> None:
+def ingest_communication_papers() -> None:
     """
-    Load all PDFs from KnowledgeBase/Conflict_Papers,
+    Load all PDFs from KnowledgeBase/Communication_Papers,
     split them into chunks, attach metadata, and write
-    a single JSON file at JsonChunksPapers/conflict_kb.json.
+    a single JSON file at JsonChunksPapers/communication_kb.json.
     """
     if not PDF_FOLDER.exists():
         raise RuntimeError(f"PDF folder not found: {PDF_FOLDER}")
@@ -89,7 +89,7 @@ def ingest_conflict_papers() -> None:
             except:
                 continue
 
-            chunk_id = f"conflict_{paper_id}_{paper_chunk_index:03d}"
+            chunk_id = f"communication_{paper_id}_{paper_chunk_index:03d}"
 
             chunk_record = {
                 "id": chunk_id,
@@ -118,4 +118,4 @@ def ingest_conflict_papers() -> None:
 
 
 if __name__ == "__main__":
-    ingest_conflict_papers()
+    ingest_communication_papers()

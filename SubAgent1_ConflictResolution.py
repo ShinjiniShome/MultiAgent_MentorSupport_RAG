@@ -11,7 +11,7 @@ import chromadb
 PROJECT_ROOT = Path(__file__).resolve().parent
 CHROMA_DIR = PROJECT_ROOT / "ChromaEmbeddings"
 CONFLICT_COLLECTION_NAME = "conflict_kb"
-#MAX_ACCEPTABLE_DISTANCE = 1 # This is to add a threshold to similarity of query and retrieved documents. Lower distance = Better match
+# MAX_ACCEPTABLE_DISTANCE = 1 # This is to add a threshold to similarity of query and retrieved documents. Lower distance = Better match
 
 
 class SubAgent1_ConflictResolution:
@@ -57,8 +57,7 @@ class SubAgent1_ConflictResolution:
         # Set number of chunks to retrieve per query
         self.n_results = 7
 
-    
-
+   
     def _embed_query(self, text: str) -> List[float]:
         """
         Create an embedding for the manager's query using the same embedding
@@ -83,6 +82,7 @@ class SubAgent1_ConflictResolution:
             "paper_authors": ...,
             "year": ...,
             "chunk_index": ...,
+            "distance": ...
           },
           ...
         ]
@@ -115,9 +115,9 @@ class SubAgent1_ConflictResolution:
             if not doc_text or not doc_text.strip():
                 continue
 
-            # If distance is too high and weak match, skip this chunk
-           # if dist is not None and dist > MAX_ACCEPTABLE_DISTANCE:
-           #     continue
+            # Optional future distance filter (currently disabled)
+            # if dist is not None and dist > MAX_ACCEPTABLE_DISTANCE:
+            #     continue
 
             context_items.append(
                 {
@@ -213,7 +213,7 @@ Very Important:
             "Using ONLY the ideas and guidance from this context, provide a practical mediation plan for the manager.\n"
              "Your answer MUST:\n"
             "- Be 3 to 4 numbered steps only.\n"
-            "- Each step 1–3 short sentences.\n"
+            "- Each step 1 to 3 short sentences.\n"
             "- Focus on clear, concrete actions or phrases the manager can use.\n"
             "- NOT ask any follow-up questions.\n"
             "- NOT invite the manager to provide more details.\n"
@@ -226,8 +226,7 @@ Very Important:
     def _is_valid_conflict_query(self, manager_query: str, debug: bool = True) -> bool:
         """
         Use the LLM as a simple classifier:
-        - Return True only if the text describes a workplace conflict/tension
-          between people that might require mediation.
+        - Return True only if the text describes a workplace conflict/tension between people that might require mediation.
         - Otherwise return False.
         """
         classifier_messages = [
@@ -243,7 +242,7 @@ Very Important:
             },
             {
                 "role": "user",
-                "content": manager_query,
+                "content": manager_query
             },
         ]
 
