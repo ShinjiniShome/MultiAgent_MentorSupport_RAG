@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alice",
+    "engagement_score": 8,
+    "leadership_score": 9,
+    "burnout_risk": "Low"
+  },
+  {
+    "name": "Bob",
+    "engagement_score": 5,
+    "leadership_score": 4,
+    "burnout_risk": "Medium"
+  },
+  {
+    "name": "Sarah",
+    "engagement_score": 6,
+    "leadership_score": 5,
+    "burnout_risk": "Medium"
+  },
+  {
+    "name": "John",
+    "engagement_score": 7,
+    "leadership_score": 3,
+    "burnout_risk": "Low"
+  },
+  {
+    "name": "Martin",
+    "engagement_score": 4,
+    "leadership_score": 2,
+    "burnout_risk": "High"
+  }
+]

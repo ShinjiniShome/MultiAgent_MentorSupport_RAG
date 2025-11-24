@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Agile Leadership Basics",
+    "topic": "Leadership",
+    "duration": "3 days",
+    "format": "Workshop"
+  },
+  {
+    "title": "Advanced Communication",
+    "topic": "Communication",
+    "duration": "2 days",
+    "format": "Online"
+  },
+  {
+    "title": "Cross-functional Collaboration",
+    "topic": "Teamwork",
+    "duration": "1 day",
+    "format": "Seminar"
+  },
+  {
+    "title": "Time Management Essentials",
+    "topic": "Productivity",
+    "duration": "1 day",
+    "format": "Online"
+  },
+  {
+    "title": "Advanced Test Automation",
+    "topic": "Testing",
+    "duration": "2 days",
+    "format": "Workshop"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Alice",
+    "reviews": [
+      {"from": "Bob", "comment": "Great leadership, but sometimes micromanages."},
+      {"from": "Sarah", "comment": "Supports the team but often overwhelmed with details."},
+      {"from": "John", "comment": "Excellent organization, but needs deeper technical insight."},
+      {"from": "Martin", "comment": "Keeps us on track but can be too focused on process."}
+    ]
+  },
+  {
+    "name": "Bob",
+    "reviews": [
+      {"from": "Alice", "comment": "Strong backend skills, needs to improve communication."},
+      {"from": "Sarah", "comment": "Good developer but sometimes misses deadlines."},
+      {"from": "John", "comment": "Reliable, but can be less collaborative."},
+      {"from": "Martin", "comment": "Technically solid, but quiet in meetings."}
+    ]
+  },
+  {
+    "name": "Sarah",
+    "reviews": [
+      {"from": "Alice", "comment": "Creative and quick, but needs better backend understanding."},
+      {"from": "Bob", "comment": "Fast with UI, but sometimes clashes with backend APIs."},
+      {"from": "John", "comment": "Designs well but occasionally overlooks edge cases."},
+      {"from": "Martin", "comment": "Strong visual design but could be more proactive in sprints."}
+    ]
+  },
+  {
+    "name": "John",
+    "reviews": [
+      {"from": "Alice", "comment": "Good tester, but needs to work on soft skills."},
+      {"from": "Bob", "comment": "Thorough QA, but sometimes over-critical."},
+      {"from": "Sarah", "comment": "Reliable tester, but communication can improve."},
+      {"from": "Martin", "comment": "Strong attention to detail, but lacks empathy."}
+    ]
+  },
+  {
+    "name": "Martin",
+    "reviews": [
+      {"from": "Alice", "comment": "Innovative designs, but sometimes disconnected from dev needs."},
+      {"from": "Bob", "comment": "Creative, but needs better collaboration."},
+      {"from": "Sarah", "comment": "Strong visuals, but sometimes inflexible with feedback."},
+      {"from": "John", "comment": "Great designer, but occasionally hard to align with QA needs."}
+    ]
+  }
+]

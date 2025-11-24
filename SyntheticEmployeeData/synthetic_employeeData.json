@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Alice",
+    "skills": [
+      "Team Support",
+      "Leadership"
+    ],
+    "weaknesses": [
+      "Improvement Needed",
+      "Inconsistent",
+      "Micromanagement",
+      "Overwhelmed"
+    ],
+    "engagement_score": 8,
+    "leadership_score": 9,
+    "burnout_risk": "Low",
+    "training_history": [
+      {
+        "title": "Time Management Essentials",
+        "topic": "Productivity",
+        "format": "Online",
+        "duration": "1 day",
+        "completion_date": "2025-07-04"
+      },
+      {
+        "title": "Advanced Communication",
+        "topic": "Communication",
+        "format": "Online",
+        "duration": "2 days",
+        "completion_date": "2024-12-10"
+      }
+    ]
+  },
+  {
+    "name": "Bob",
+    "skills": [
+      "Reliability",
+      "Technical Strength"
+    ],
+    "weaknesses": [
+      "Misses Deadlines",
+      "Improvement Needed",
+      "Inconsistent",
+      "Communication Gap"
+    ],
+    "engagement_score": 5,
+    "leadership_score": 4,
+    "burnout_risk": "Medium",
+    "training_history": [
+      {
+        "title": "Cross-functional Collaboration",
+        "topic": "Teamwork",
+        "format": "Seminar",
+        "duration": "1 day",
+        "completion_date": "2023-11-26"
+      },
+      {
+        "title": "Agile Leadership Basics",
+        "topic": "Leadership",
+        "format": "Workshop",
+        "duration": "3 days",
+        "completion_date": "2023-11-30"
+      }
+    ]
+  },
+  {
+    "name": "Sarah",
+    "skills": [
+      "Speed",
+      "Technical Strength",
+      "Creativity"
+    ],
+    "weaknesses": [
+      "Improvement Needed",
+      "Inconsistent",
+      "Overlooked Details"
+    ],
+    "engagement_score": 6,
+    "leadership_score": 5,
+    "burnout_risk": "Medium",
+    "training_history": [
+      {
+        "title": "Time Management Essentials",
+        "topic": "Productivity",
+        "format": "Online",
+        "duration": "1 day",
+        "completion_date": "2025-11-09"
+      }
+    ]
+  },
+  {
+    "name": "John",
+    "skills": [
+      "Reliability",
+      "Technical Strength",
+      "Attention to Detail"
+    ],
+    "weaknesses": [
+      "Improvement Needed",
+      "Inconsistent",
+      "Overly Critical"
+    ],
+    "engagement_score": 7,
+    "leadership_score": 3,
+    "burnout_risk": "Low",
+    "training_history": [
+      {
+        "title": "Advanced Test Automation",
+        "topic": "Testing",
+        "format": "Workshop",
+        "duration": "2 days",
+        "completion_date": "2024-12-30"
+      },
+      {
+        "title": "Time Management Essentials",
+        "topic": "Productivity",
+        "format": "Online",
+        "duration": "1 day",
+        "completion_date": "2023-11-27"
+      }
+    ]
+  },
+  {
+    "name": "Martin",
+    "skills": [
+      "Technical Strength",
+      "Creativity",
+      "Leadership",
+      "Innovation"
+    ],
+    "weaknesses": [
+      "Improvement Needed",
+      "Inconsistent"
+    ],
+    "engagement_score": 4,
+    "leadership_score": 2,
+    "burnout_risk": "High",
+    "training_history": [
+      {
+        "title": "Advanced Communication",
+        "topic": "Communication",
+        "format": "Online",
+        "duration": "2 days",
+        "completion_date": "2025-04-03"
+      },
+      {
+        "title": "Advanced Test Automation",
+        "topic": "Testing",
+        "format": "Workshop",
+        "duration": "2 days",
+        "completion_date": "2024-03-14"
+      }
+    ]
+  }
+]

@@ -25,3 +25,9 @@ Build_EmployeeDev_Embeddings.py
 Build_Productivity_Embeddings.py
 Ingest_EmployeeDev_Papers.py
 Ingest_Productivity_Papers.py
+
+
+evaluation_of_productivity.py
+generate_synthetic_employeesurvey_data.py
+generate_synthetic_productivity_data.py
+productivity_baseline_configuration.py
