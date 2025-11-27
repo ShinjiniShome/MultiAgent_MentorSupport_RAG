@@ -6,12 +6,20 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import chromadb
 
+from employee_configuration import Team
+import json
+
 
 # FILE PATHS
 PROJECT_ROOT = Path(__file__).resolve().parent
 CHROMA_DIR = PROJECT_ROOT / "ChromaEmbeddings"
 CONFLICT_COLLECTION_NAME = "conflict_kb"
 # MAX_ACCEPTABLE_DISTANCE = 1 # This is to add a threshold to similarity of query and retrieved documents. Lower distance = Better match
+
+# Getting Employee Names
+KNOWN_EMPLOYEES = [member["name"] for member in Team]
+KNOWN_EMPLOYEE_SET = {name.lower() for name in KNOWN_EMPLOYEES}
+
 
 
 class SubAgent1_ConflictResolution:
@@ -222,6 +230,7 @@ Very Important:
 
         return user_content
     
+    
 
     def _is_valid_conflict_query(self, manager_query: str, debug: bool = True) -> bool:
         """
@@ -258,6 +267,93 @@ Very Important:
             print(f"\n[Conflict Sub-Agent] Classifier decision for query: {answer} -> valid = {is_valid}\n")
 
         return is_valid
+    
+    
+    def _detect_employee_scope_with_llm(self, manager_query: str, debug: bool = True) -> Dict[str, Any]:
+        """
+        Ask the LLM whether the query is about:
+        - only known employees (Example here -Alice, Bob, Sarah, John, Martin)
+        - only unknown employees
+        - a mix
+        - or no specific person
+
+        Returns a dict:
+        {
+          "scope": "only_known" | "only_unknown" | "mixed" | "none",
+          "known_employees": [list of known employee names mentioned]
+        }
+        """
+
+        known_list_str = ", ".join(KNOWN_EMPLOYEES)
+
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are a strict classifier.\n"
+                    "You are given:\n"
+                    f"- A list of known employees: {known_list_str}\n"
+                    "- A manager's text.\n\n"
+                    "Your job is ONLY to decide whether the text refers to those known employees, "
+                    "or to other people not in the list, or to no specific person.\n\n"
+                    "Return ONLY a single JSON object with this structure:\n"
+                    "{\n"
+                    '  \"scope\": \"only_known\" | \"only_unknown\" | \"mixed\" | \"none\",\n'
+                    '  \"known_employees\": [list of known employees explicitly mentioned]\n'
+                    "}\n\n"
+                    "Definitions:\n"
+                    "- \"only_known\"  = all specifically named people are in the known list.\n"
+                    "- \"only_unknown\" = it clearly talks about specific people, but none of them are in the known list.\n"
+                    "- \"mixed\"       = both known and unknown specific people are clearly mentioned.\n"
+                    "- \"none\"        = no specific person is mentioned (e.g. just 'my team', 'people', 'colleagues').\n"
+                ),
+            },
+            {
+                "role": "user",
+                "content": manager_query,
+            },
+        ]
+
+        resp = self.client.chat.completions.create(
+            model=self.model_name,
+            response_format={"type": "json_object"},
+            messages=messages,
+        )
+
+        raw = resp.choices[0].message.content
+        if debug:
+            print(f"[Conflict Sub-Agent] Employee scope raw JSON: {raw}")
+
+        try:
+            data = json.loads(raw)
+        except Exception:
+            # If parsing fails, fall back to assuming no specific employee scope
+            if debug:
+                print("[Conflict Sub-Agent] Failed to parse employee scope JSON; defaulting to scope='none'.")
+            return {"scope": "none", "known_employees": []}
+
+        scope = data.get("scope", "none")
+        known_emps = data.get("known_employees", [])
+        if not isinstance(known_emps, list):
+            known_emps = []
+
+        # Normalize recognized known names to the exact canonical forms
+        normalized_known = []
+        lower_to_canonical = {name.lower(): name for name in KNOWN_EMPLOYEES}
+        for name in known_emps:
+            if isinstance(name, str) and name.lower() in lower_to_canonical:
+                normalized_known.append(lower_to_canonical[name.lower()])
+
+        result = {
+            "scope": scope,
+            "known_employees": normalized_known,
+        }
+
+        if debug:
+            print(f"[Conflict Sub-Agent] Employee scope parsed: {result}")
+
+        return result
+
 
 
 
@@ -285,7 +381,23 @@ Very Important:
             
             )
         
+        # Check whether this query is about known/unknown employees (via LLM)
+        scope_info = self._detect_employee_scope_with_llm(manager_query, debug=debug)
+        scope = scope_info.get("scope", "none")
+        known_emps = scope_info.get("known_employees", [])
 
+        # If the query is ONLY about unknown named people or mixed, refuse to answer
+        if scope in ("only_unknown", "mixed"):
+            if debug:
+                print(
+                    "[Conflict Sub-Agent] Query is about specific employees outside the known synthetic team.\n"
+                )
+            return (
+                "The Conflict Resolution Sub-Agent can only provide suggestions for the members of the team configured\n."
+                "It cannot safely provide person-specific conflict guidance for other named employees."
+            )
+
+        
         # Retrieve context from Chroma
         context_items = self._retrieve_context(manager_query, debug=debug)
 
@@ -337,6 +449,8 @@ if __name__ == "__main__":
         result = agent.run(user_input, debug=True)
         print("\n[Agent Output]...\n")
         print(result)
+
+
 
 
 # OPTIONAL LLM GENRIC ANSWER IN CASE OF NO CONTEXTS
