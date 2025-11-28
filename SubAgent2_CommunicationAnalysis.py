@@ -259,12 +259,7 @@ Output style:
                 return f.read().strip()
 
 
-    def _build_user_prompt(
-        self,
-        manager_query: str,
-        context_items: List[Dict[str, Any]],
-        communication_summary: str,
-    ) -> str:
+    def _build_user_prompt(self,manager_query: str,context_items: List[Dict[str, Any]],communication_summary: str) -> str:
         """
         Build the user-facing prompt that includes:
         - the manager's problem
