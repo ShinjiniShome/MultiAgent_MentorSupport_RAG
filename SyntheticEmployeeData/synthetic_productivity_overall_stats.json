@@ -1,0 +1,57 @@
+{
+  "Alice": {
+    "stretch_exceeds": 4,
+    "below_baseline": 0,
+    "total_days": 5,
+    "low_motivation_days": 2,
+    "high_stress_days": 2,
+    "heavy_workload_days": 3,
+    "low_role_clarity_days": 5,
+    "low_contribution_days": 1,
+    "overload_flags": 0
+  },
+  "Bob": {
+    "stretch_exceeds": 6,
+    "below_baseline": 2,
+    "total_days": 5,
+    "low_motivation_days": 1,
+    "high_stress_days": 1,
+    "heavy_workload_days": 0,
+    "low_role_clarity_days": 5,
+    "low_contribution_days": 2,
+    "overload_flags": 0
+  },
+  "Sarah": {
+    "stretch_exceeds": 6,
+    "below_baseline": 0,
+    "total_days": 5,
+    "low_motivation_days": 1,
+    "high_stress_days": 1,
+    "heavy_workload_days": 3,
+    "low_role_clarity_days": 5,
+    "low_contribution_days": 3,
+    "overload_flags": 0
+  },
+  "John": {
+    "stretch_exceeds": 3,
+    "below_baseline": 0,
+    "total_days": 5,
+    "low_motivation_days": 1,
+    "high_stress_days": 1,
+    "heavy_workload_days": 1,
+    "low_role_clarity_days": 5,
+    "low_contribution_days": 1,
+    "overload_flags": 0
+  },
+  "Martin": {
+    "stretch_exceeds": 1,
+    "below_baseline": 0,
+    "total_days": 5,
+    "low_motivation_days": 2,
+    "high_stress_days": 2,
+    "heavy_workload_days": 1,
+    "low_role_clarity_days": 5,
+    "low_contribution_days": 1,
+    "overload_flags": 0
+  }
+}

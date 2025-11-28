@@ -1,0 +1,561 @@
+[
+  {
+    "day": "day 1",
+    "name": "Alice",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "meetings_led_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 1",
+    "name": "Bob",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 6,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 4,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Low satisfaction with role clarity.",
+      "High productivity but low motivation: possible unsustainable work."
+    ]
+  },
+  {
+    "day": "day 1",
+    "name": "Sarah",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 8,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 1",
+    "name": "John",
+    "evaluations": [
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 13,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "test_cases_executed_per_day",
+        "value": 25,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Low satisfaction with role clarity.",
+      "High productivity but low motivation: possible unsustainable work."
+    ]
+  },
+  {
+    "day": "day 1",
+    "name": "Martin",
+    "evaluations": [
+      {
+        "metric": "design_iterations_per_day",
+        "value": 3,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "presentations_per_day",
+        "value": 0,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 2",
+    "name": "Alice",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 3,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "meetings_led_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity.",
+      "High productivity but low motivation: possible unsustainable work."
+    ]
+  },
+  {
+    "day": "day 2",
+    "name": "Bob",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 7,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 4,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 0,
+        "status": "Below baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 2",
+    "name": "Sarah",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 3,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 2",
+    "name": "John",
+    "evaluations": [
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 7,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "test_cases_executed_per_day",
+        "value": 16,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 2",
+    "name": "Martin",
+    "evaluations": [
+      {
+        "metric": "design_iterations_per_day",
+        "value": 4,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "presentations_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Low satisfaction with role clarity.",
+      "High productivity but low motivation: possible unsustainable work."
+    ]
+  },
+  {
+    "day": "day 3",
+    "name": "Alice",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 5,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "meetings_led_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 3",
+    "name": "Bob",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 7,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 3",
+    "name": "Sarah",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 5,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 3",
+    "name": "John",
+    "evaluations": [
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 8,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "test_cases_executed_per_day",
+        "value": 12,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 3",
+    "name": "Martin",
+    "evaluations": [
+      {
+        "metric": "design_iterations_per_day",
+        "value": 3,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "presentations_per_day",
+        "value": 0,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low motivation reported.",
+      "High stress level reported.",
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 4",
+    "name": "Alice",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "meetings_led_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 4",
+    "name": "Bob",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 4,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 4",
+    "name": "Sarah",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 4,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 4",
+    "name": "John",
+    "evaluations": [
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 13,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "test_cases_executed_per_day",
+        "value": 16,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 4",
+    "name": "Martin",
+    "evaluations": [
+      {
+        "metric": "design_iterations_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "presentations_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 5",
+    "name": "Alice",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 5,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "meetings_led_per_day",
+        "value": 3,
+        "status": "Exceeds stretch goal"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 5",
+    "name": "Bob",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 7,
+        "status": "Exceeds stretch goal"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 3,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 0,
+        "status": "Below baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  },
+  {
+    "day": "day 5",
+    "name": "Sarah",
+    "evaluations": [
+      {
+        "metric": "tasks_completed_per_day",
+        "value": 4,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "code_reviews_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 5",
+    "name": "John",
+    "evaluations": [
+      {
+        "metric": "bugs_fixed_per_day",
+        "value": 10,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "test_cases_executed_per_day",
+        "value": 11,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Low satisfaction with role clarity."
+    ]
+  },
+  {
+    "day": "day 5",
+    "name": "Martin",
+    "evaluations": [
+      {
+        "metric": "design_iterations_per_day",
+        "value": 2,
+        "status": "Within baseline"
+      },
+      {
+        "metric": "presentations_per_day",
+        "value": 1,
+        "status": "Within baseline"
+      }
+    ],
+    "notes": [
+      "Heavy perceived workload reported.",
+      "Low satisfaction with role clarity.",
+      "Low feeling of contribution reported."
+    ]
+  }
+]

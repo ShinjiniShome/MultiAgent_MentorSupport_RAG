@@ -1,0 +1,252 @@
+[
+  {
+    "day": "day 1",
+    "name": "Alice",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "High",
+    "leadership_score": 1
+  },
+  {
+    "day": "day 1",
+    "name": "Bob",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 1
+  },
+  {
+    "day": "day 1",
+    "name": "Sarah",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 5
+  },
+  {
+    "day": "day 1",
+    "name": "John",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 1",
+    "name": "Martin",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 4
+  },
+  {
+    "day": "day 2",
+    "name": "Alice",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "High",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 2",
+    "name": "Bob",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 2",
+    "name": "Sarah",
+    "daily_motivation": 4,
+    "stress_level": 1,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "High",
+    "leadership_score": 5
+  },
+  {
+    "day": "day 2",
+    "name": "John",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 5
+  },
+  {
+    "day": "day 2",
+    "name": "Martin",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "High",
+    "leadership_score": 2
+  },
+  {
+    "day": "day 3",
+    "name": "Alice",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 2
+  },
+  {
+    "day": "day 3",
+    "name": "Bob",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 3",
+    "name": "Sarah",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 5
+  },
+  {
+    "day": "day 3",
+    "name": "John",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 4
+  },
+  {
+    "day": "day 3",
+    "name": "Martin",
+    "daily_motivation": 2,
+    "stress_level": 4,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "High",
+    "leadership_score": 4
+  },
+  {
+    "day": "day 4",
+    "name": "Alice",
+    "daily_motivation": 5,
+    "stress_level": 3,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 2
+  },
+  {
+    "day": "day 4",
+    "name": "Bob",
+    "daily_motivation": 4,
+    "stress_level": 1,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 4
+  },
+  {
+    "day": "day 4",
+    "name": "Sarah",
+    "daily_motivation": 4,
+    "stress_level": 1,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 1
+  },
+  {
+    "day": "day 4",
+    "name": "John",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "High",
+    "leadership_score": 5
+  },
+  {
+    "day": "day 4",
+    "name": "Martin",
+    "daily_motivation": 4,
+    "stress_level": 2,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Medium",
+    "leadership_score": 1
+  },
+  {
+    "day": "day 5",
+    "name": "Alice",
+    "daily_motivation": 3,
+    "stress_level": 3,
+    "perceived_workload": "Light",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "High",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 5",
+    "name": "Bob",
+    "daily_motivation": 4,
+    "stress_level": 1,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "No",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 4
+  },
+  {
+    "day": "day 5",
+    "name": "Sarah",
+    "daily_motivation": 5,
+    "stress_level": 3,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "High",
+    "leadership_score": 2
+  },
+  {
+    "day": "day 5",
+    "name": "John",
+    "daily_motivation": 4,
+    "stress_level": 1,
+    "perceived_workload": "Normal",
+    "satisfaction_with_role_clarity": "Yes",
+    "feeling_of_contribution": "High",
+    "leadership_score": 3
+  },
+  {
+    "day": "day 5",
+    "name": "Martin",
+    "daily_motivation": 5,
+    "stress_level": 3,
+    "perceived_workload": "Heavy",
+    "satisfaction_with_role_clarity": "Maybe",
+    "feeling_of_contribution": "Low",
+    "leadership_score": 5
+  }
+]

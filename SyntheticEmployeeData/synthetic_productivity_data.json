@@ -1,0 +1,162 @@
+[
+  {
+    "day": "day 1",
+    "name": "Alice",
+    "tasks_completed_per_day": 2,
+    "meetings_led_per_day": 2
+  },
+  {
+    "day": "day 1",
+    "name": "Bob",
+    "tasks_completed_per_day": 6,
+    "bugs_fixed_per_day": 4,
+    "code_reviews_per_day": 1
+  },
+  {
+    "day": "day 1",
+    "name": "Sarah",
+    "tasks_completed_per_day": 8,
+    "bugs_fixed_per_day": 3,
+    "code_reviews_per_day": 3
+  },
+  {
+    "day": "day 1",
+    "name": "John",
+    "bugs_fixed_per_day": 13,
+    "test_cases_executed_per_day": 25
+  },
+  {
+    "day": "day 1",
+    "name": "Martin",
+    "design_iterations_per_day": 3,
+    "presentations_per_day": 0
+  },
+  {
+    "day": "day 2",
+    "name": "Alice",
+    "tasks_completed_per_day": 3,
+    "meetings_led_per_day": 3
+  },
+  {
+    "day": "day 2",
+    "name": "Bob",
+    "tasks_completed_per_day": 7,
+    "bugs_fixed_per_day": 4,
+    "code_reviews_per_day": 0
+  },
+  {
+    "day": "day 2",
+    "name": "Sarah",
+    "tasks_completed_per_day": 3,
+    "bugs_fixed_per_day": 3,
+    "code_reviews_per_day": 3
+  },
+  {
+    "day": "day 2",
+    "name": "John",
+    "bugs_fixed_per_day": 7,
+    "test_cases_executed_per_day": 16
+  },
+  {
+    "day": "day 2",
+    "name": "Martin",
+    "design_iterations_per_day": 4,
+    "presentations_per_day": 1
+  },
+  {
+    "day": "day 3",
+    "name": "Alice",
+    "tasks_completed_per_day": 5,
+    "meetings_led_per_day": 2
+  },
+  {
+    "day": "day 3",
+    "name": "Bob",
+    "tasks_completed_per_day": 7,
+    "bugs_fixed_per_day": 2,
+    "code_reviews_per_day": 1
+  },
+  {
+    "day": "day 3",
+    "name": "Sarah",
+    "tasks_completed_per_day": 5,
+    "bugs_fixed_per_day": 1,
+    "code_reviews_per_day": 2
+  },
+  {
+    "day": "day 3",
+    "name": "John",
+    "bugs_fixed_per_day": 8,
+    "test_cases_executed_per_day": 12
+  },
+  {
+    "day": "day 3",
+    "name": "Martin",
+    "design_iterations_per_day": 3,
+    "presentations_per_day": 0
+  },
+  {
+    "day": "day 4",
+    "name": "Alice",
+    "tasks_completed_per_day": 2,
+    "meetings_led_per_day": 2
+  },
+  {
+    "day": "day 4",
+    "name": "Bob",
+    "tasks_completed_per_day": 4,
+    "bugs_fixed_per_day": 1,
+    "code_reviews_per_day": 3
+  },
+  {
+    "day": "day 4",
+    "name": "Sarah",
+    "tasks_completed_per_day": 4,
+    "bugs_fixed_per_day": 1,
+    "code_reviews_per_day": 3
+  },
+  {
+    "day": "day 4",
+    "name": "John",
+    "bugs_fixed_per_day": 13,
+    "test_cases_executed_per_day": 16
+  },
+  {
+    "day": "day 4",
+    "name": "Martin",
+    "design_iterations_per_day": 2,
+    "presentations_per_day": 1
+  },
+  {
+    "day": "day 5",
+    "name": "Alice",
+    "tasks_completed_per_day": 5,
+    "meetings_led_per_day": 3
+  },
+  {
+    "day": "day 5",
+    "name": "Bob",
+    "tasks_completed_per_day": 7,
+    "bugs_fixed_per_day": 3,
+    "code_reviews_per_day": 0
+  },
+  {
+    "day": "day 5",
+    "name": "Sarah",
+    "tasks_completed_per_day": 4,
+    "bugs_fixed_per_day": 2,
+    "code_reviews_per_day": 2
+  },
+  {
+    "day": "day 5",
+    "name": "John",
+    "bugs_fixed_per_day": 10,
+    "test_cases_executed_per_day": 11
+  },
+  {
+    "day": "day 5",
+    "name": "Martin",
+    "design_iterations_per_day": 2,
+    "presentations_per_day": 1
+  }
+]
