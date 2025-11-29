@@ -30,7 +30,7 @@ class SubAgent3_EmployeeDevelopment:
     SubAgent3_EmployeeDevelopment
 
     Responsibility:
-    - Handle manager queries about: Employee development and growth, Strengths and weaknesses, Performance and skill gaps, Burnout or risk-related development support
+    - Handle manager queries about: Employee development and growth, Strengths and weaknesses, Performance and skill gaps, Burnout or risk-related development support.
     - Evidence-based employee-development literature from Chroma (employeedev_kb).
     - Synthetic employee profiles (strengths, weaknesses, scores, burnout risk, training history).
     - Available trainings catalog (to recommend only relevant, not-yet-taken trainings).
@@ -215,9 +215,7 @@ class SubAgent3_EmployeeDevelopment:
                 title = item.get("paper_title") or "Unknown title"
                 year = item.get("year")
                 dist = item.get("distance")
-                print(
-                    f"  {i+1}. {title} ({year})  - id={item['id']}  (distance={dist:.3f})"
-                )
+                print(f"  {i+1}. {title} ({year})  - id={item['id']}  (distance={dist:.3f})")
 
         return context_items
 
@@ -723,7 +721,7 @@ if __name__ == "__main__":
     # For Testing
     agent = SubAgent3_EmployeeDevelopment()
 
-    print("Hi I am Sub-Agent Employee Development. Type your employee development / performance related description (or 'q' to quit). ")
+    print("Hi I am Sub-Agent Employee Development. Type your employee development / performance related problem description (or 'q' to quit). ")
     while True:
         user_input = input("\nManager employee development description: \n")
         if user_input.strip().lower() in {"q", "quit", "exit"}:

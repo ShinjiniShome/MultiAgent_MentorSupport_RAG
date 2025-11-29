@@ -156,8 +156,7 @@ class SubAgent2_CommunicationAnalysis:
                 title = item.get("paper_title") or "Unknown title"
                 year = item.get("year")
                 dist = item.get("distance")
-                print(
-                    f"  {i+1}. {title} ({year})  - id={item['id']}  (distance={dist:.3f})")
+                print(f"  {i+1}. {title} ({year})  - id={item['id']}  (distance={dist:.3f})")
 
         return context_items
 
@@ -492,7 +491,7 @@ if __name__ == "__main__":
     # For Testing
     agent = SubAgent2_CommunicationAnalysis()
 
-    print("Hi I am Sub-Agent Communication Analysis. Type your communication / meetings related description (or 'q' to quit).")
+    print("Hi I am Sub-Agent Communication Analysis. Type your communication / meetings related problem description (or 'q' to quit).")
     while True:
         user_input = input("\nManager communication description:\n")
         if user_input.strip().lower() in {"q", "quit", "exit"}:
