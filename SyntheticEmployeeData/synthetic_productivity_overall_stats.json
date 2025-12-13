@@ -6,7 +6,7 @@
     "low_motivation_days": 2,
     "high_stress_days": 2,
     "heavy_workload_days": 3,
-    "low_role_clarity_days": 5,
+    "low_role_clarity_days": 2,
     "low_contribution_days": 1,
     "overload_flags": 0
   },
@@ -17,7 +17,7 @@
     "low_motivation_days": 1,
     "high_stress_days": 1,
     "heavy_workload_days": 0,
-    "low_role_clarity_days": 5,
+    "low_role_clarity_days": 3,
     "low_contribution_days": 2,
     "overload_flags": 0
   },
@@ -28,7 +28,7 @@
     "low_motivation_days": 1,
     "high_stress_days": 1,
     "heavy_workload_days": 3,
-    "low_role_clarity_days": 5,
+    "low_role_clarity_days": 3,
     "low_contribution_days": 3,
     "overload_flags": 0
   },
@@ -39,7 +39,7 @@
     "low_motivation_days": 1,
     "high_stress_days": 1,
     "heavy_workload_days": 1,
-    "low_role_clarity_days": 5,
+    "low_role_clarity_days": 2,
     "low_contribution_days": 1,
     "overload_flags": 0
   },

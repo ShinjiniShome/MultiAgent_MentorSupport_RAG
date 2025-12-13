@@ -17,8 +17,7 @@
     "notes": [
       "Low motivation reported.",
       "High stress level reported.",
-      "Heavy perceived workload reported.",
-      "Low satisfaction with role clarity."
+      "Heavy perceived workload reported."
     ]
   },
   {
@@ -70,7 +69,6 @@
     ],
     "notes": [
       "Heavy perceived workload reported.",
-      "Low satisfaction with role clarity.",
       "Low feeling of contribution reported."
     ]
   },
@@ -246,8 +244,7 @@
       }
     ],
     "notes": [
-      "Heavy perceived workload reported.",
-      "Low satisfaction with role clarity."
+      "Heavy perceived workload reported."
     ]
   },
   {
@@ -270,9 +267,7 @@
         "status": "Within baseline"
       }
     ],
-    "notes": [
-      "Low satisfaction with role clarity."
-    ]
+    "notes": []
   },
   {
     "day": "day 3",
@@ -298,7 +293,6 @@
       "Low motivation reported.",
       "High stress level reported.",
       "Heavy perceived workload reported.",
-      "Low satisfaction with role clarity.",
       "Low feeling of contribution reported."
     ]
   },
@@ -318,7 +312,6 @@
       }
     ],
     "notes": [
-      "Low satisfaction with role clarity.",
       "Low feeling of contribution reported."
     ]
   },
@@ -383,9 +376,7 @@
         "status": "Exceeds stretch goal"
       }
     ],
-    "notes": [
-      "Low satisfaction with role clarity."
-    ]
+    "notes": []
   },
   {
     "day": "day 4",
@@ -427,9 +418,7 @@
         "status": "Within baseline"
       }
     ],
-    "notes": [
-      "Low satisfaction with role clarity."
-    ]
+    "notes": []
   },
   {
     "day": "day 4",
@@ -465,9 +454,7 @@
         "status": "Exceeds stretch goal"
       }
     ],
-    "notes": [
-      "Low satisfaction with role clarity."
-    ]
+    "notes": []
   },
   {
     "day": "day 5",
@@ -533,9 +520,7 @@
         "status": "Within baseline"
       }
     ],
-    "notes": [
-      "Low satisfaction with role clarity."
-    ]
+    "notes": []
   },
   {
     "day": "day 5",
