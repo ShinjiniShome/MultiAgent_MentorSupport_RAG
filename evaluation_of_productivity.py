@@ -78,7 +78,7 @@ def evaluate_productivity(data, survey_data=None):
             motivation = survey_entry.get("daily_motivation", 3)
             stress = survey_entry.get("stress_level", 3)
             workload = survey_entry.get("perceived_workload", "Normal")
-            role_clarity = survey_entry.get("role_clarity", "Maybe")
+            role_clarity = survey_entry.get("satisfaction_with_role_clarity", "Maybe")
             contribution = survey_entry.get("feeling_of_contribution", "Medium")
 
             # Flags
